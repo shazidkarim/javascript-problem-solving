@@ -13,6 +13,18 @@ function reverseString(inputString) {
   let outputStr = reverseString(inputStr);
   console.log(outputStr);
 
+
+  function reversedString(inputString){
+    let reversedString = "";
+    for(let i = inputString.length - 1; i>=0; i--){
+        reverseString += inputString[i];
+    }
+    return reverseString;
+  }
+  let inputStr1 = "shazid karim";
+  let outputStr1 = reverseString(inputStr1);
+  console.log(outputStr1);
+
 //2 : Create a function that takes an array of numbers as input and returns the sum of all positive numbers in the array. 
 
 function sumOfPositiveNumbers(numbersArray) {
@@ -28,7 +40,7 @@ function sumOfPositiveNumbers(numbersArray) {
   let resultOne = sumOfPositiveNumbers(numbers);
   console.log(resultOne);
 
-//3: Write a JavaScript program to find the most frequent element in an array and return it. 
+//3: Write a JavaScript program to find the most frequent element in an array and return it.
 function findMostFrequentElement(arr) {
     let frequency = {};
     let maxFrequency = 0;
